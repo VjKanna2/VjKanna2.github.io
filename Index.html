@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-md">
+        <h2 class="logo-image col-md-4 ms-4" data-aos="zoom-out">&lt;/VIJAY&gt;</h2>
+        <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navBar">
+            <span class="navbar-toggler-icon menu"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end me-4" id="navBar" data-aos="fade-down">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#internship">Internships</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- profile -->
+        <div class="profile">
+            <img src="Images/dp2.jpg" alt="" class="myDp" data-aos="zoom-in">
+            <div class="info" data-aos="zoom-out">
+                <h2 class="name">VIJAY KANNA M M</h2>
+                <div class="social">
+                    <button class="btn btn-dark btn-gh" id="github"><i class="fab fa-github"></i></button>
+                    <button class="btn btn-primary btn-in" id="linkedin"><i class="fab fa-linkedin-in"></i></button>
+                    <button class="btn btn-danger btn-mail" id="mail"><i class="fas fa-envelope"></i></button>
+                </div>
+            </div>
+        </div>
+        
+        <button id="back-to-top" class="btn btn-primary">
+            &#8679;
+        </button>       
+
+        <!-- about -->
+        <div class="about" id="about">
+            <h2 class="about-title" data-aos="fade-down"><i class="fas fa-address-card"></i> About </h2>
+            <hr width="100">
+            <p class="abt-content" data-aos="fade-up">
+                &nbsp;&nbsp;&nbsp;&nbsp; A talented student and web developer with a strong proficiency in front-end development and a rapidly expanding backend skillset. Recognized for seamlessly adapting to diverse environments, I excel both in independent work and collaborative team efforts. I am actively seeking opportunities to contribute innovative solutions to projects and learn continuously.
+            </p>
+            <div class="abt-details col-12 col-md-11 col-lg-9 col-xl-8 col-xxl-7">
+                <ul class="list1" data-aos="fade-right">
+                    <li><b>Name :</b> Vijay Kanna M M</li>
+                    <li><b>Qualification :</b> B.Tech - CSE</li>
+                    <li><b>Place :</b> Trichy, Tamil Nadu</li>
+                </ul>
+                <ul class="list2" data-aos="fade-left">
+                    <li><b>Mail :</b> <a href="mailto:vjkanna24@gmail.com">vjkanna24@gmail.com</a></li>
+                    <li><b>Intrests :</b> Web Development</li>
+                    <li><b>LOR : </b>1</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- education -->
+        <div class="education" id="education">
+            <h2 class="education-title" data-aos="fade-down"><i class="fas fa-user-graduate"></i> Education </h2>
+            <hr width="100">
+            <div class="education-container">
+                <div class="education-item" data-aos="zoom-out-up">
+                    <h3 class="course-title">B.Tech in Computer Science</h3>
+                    <p>SRM Institute of Science & Technology</p>
+                    <p>CGPA: <b>9.2</b></p>
+                    <span class="duration">2020 - 2024</span>
+                </div>
+                <div class="education-item" data-aos="zoom-out-up">
+                    <h3 class="course-title">HSC</h3>
+                    <p>Sree Ambaals Matric Hr. Sec. School</p>
+                    <p>Percentage: <b>78.67</b></p>
+                    <span class="duration">2019 - 2020</span>
+                </div>
+                <div class="education-item" data-aos="zoom-out-up">
+                    <h3 class="course-title">SSLC</h3>
+                    <p>Sree Ambaals Matric Hr. Sec. School</p>
+                    <p>Percentage: <b>90.6</b></p>
+                    <span class="duration">2017 - 2018</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- internship -->
+        <div class="internship" id="internship">
+            <h2 class="internship-title" data-aos="fade-down"><i class="fas fa-laptop-code"></i> Internships </h2>
+            <hr width="100">
+            <div class="intern-card">
+                <div class="intern1  col-xl-4 col-md-5 col-sm-8 col-12" data-aos="flip-right">
+                    <div class="company">
+                        <img src="Images/logos/cob logo.png" class="cob-logo">
+                        <p class="comp-name">CodesOnBytes</p>
+                    </div>
+                    <p class="role"><b>Role :</b> Web Developer Intern</p>
+                    <p class="month">Sep'23 - Oct'23</p>
+                    <button type="button" class="btn btn-primary read-more-btn" id="blur-btn"><i class="fab fa-readme"></i> Read More</button>
+                </div>
+                <div id="modal" class="modal">
+                    <div class="modal-content row">
+                        <dl>
+                            <dt>Description:</dt>
+                            <dd>
+                                <ul class="read-more mt-1 col-11">
+                                    <li>
+                                        Designed UI for web pages and enhanced JavaScript proficiency by 70%, enabling
+                                        the
+                                        creation of interactive web experiences.
+                                    </li>
+                                    <li>
+                                        Received a <b>Letter Of Recommendation</b> from the company for exceptional
+                                        performance.
+                                    </li>
+                                    <li>
+                                        GitHub Link : <a
+                                            href="https://github.com/VjKanna2/Codes-on-Bytes">CodesOnBytes</a>
+                                    </li>
+                                    <li>
+                                        <b>Internship Completion Certificate:</b>
+                                        <br>
+                                        <img src="Images/certificates/cob.png" alt="CodesOnBytes Certificate"
+                                            class="cob-certificate ms-3 my-3">
+                                    </li>
+                                    <li>
+                                        <b>Letter of Recommendation:</b>
+                                        <br>
+                                        <img src="Images/certificates/lor.png" alt="CodesOnBytes LOR"
+                                            class="cob-certificate ms-3 my-3">
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+
+                        <span class="close x col-1">&times;</span>
+                    </div>
+                </div>
+                <div class="intern2  col-xl-4 col-md-5 col-sm-8 col-12 mt-4 mt-md-0" data-aos="flip-left">
+                    <div class="company">
+                        <img src="Images/logos/voc logo.png" class="voc-logo">
+                        <p class="comp-name">VaultOfCodes</p>
+                    </div>
+                    <p class="role"><b>Role :</b> Web Developer Intern</p>
+                    <p class="month">Oct'23 - Nov'23</p>
+                    <button type="button" class="btn btn-primary read-more-btn" id="blur-btn2"><i class="fab fa-readme"></i> Read More</button>
+                </div>
+                <div id="modal2" class="modal">
+                    <div class="modal-content row">
+                        <dl>
+                            <dt>Description:</dt>
+                            <dd>
+                                <ul class="read-more mt-1 col-11">
+                                    <li>
+                                        Developed responsive web pages and achieved a 100% improvement in performance in
+                                        HTML5,
+                                        CSS3, and JavaScript.
+                                    <li>
+                                        Acquired proficiency in Media queries by 80% while optimizing web pages for
+                                        responsiveness.
+                                    </li>
+                                    <li>
+                                        GitHub Link : <a
+                                            href="https://github.com/VjKanna2/Vault-of-Codes">VaultOfCodes</a>
+                                    </li>
+                                    <li>
+                                        <b>Internship Completion Certificate: </b><br>
+                                        <img src="Images/certificates/voc.png" alt="VaultOfCodes Certificate"
+                                            class="voc-certificate ms-3 my-3">
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <span class="close2 x col-1">&times;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- projects -->
+        <div class="projects" id="projects">
+            <h2 class="project-title" data-aos="fade-down"><i class="fas fa-tasks"></i> Projects</h2>
+            <hr width="100">
+            <div class="project-list col-12">
+                <div class="project1" data-aos="zoom-out-up">
+                    <p class="project1-title">Voice Assistant</p>
+                    <dl>
+                        <dt>Description:</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    A Voice Assistant has been developed to execute simple tasks based on voice commands.
+                                </li>
+                                <li>
+                                    The assistant can interact with the user through speech, perform web searches, opens and closes applications, and provide information using Wikipedia. 
+                                </li>
+                                <li>
+                                    It utilizes various Python packages to achieve these functionalities.
+                                </li>
+                                <li><b>Tech Stack:</b> Python</li>
+                                <li><b>GitHub:</b><a href="https://github.com/VjKanna2/Voice_Assistant" target="_blank"> Voice
+                                        Assistant</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="project2" data-aos="zoom-out-up">
+                    <p class="project2-title">Text Summarization</p>
+                    <dl>
+                        <dt>Description:</dt>
+                        <dd>
+                            <ul>
+                                <li>The project focuses on extractive text summarization, which involves selecting the most relevant sentences from the original text to create a summary.
+                                </li>
+                                <li>
+                                    The summarization process includes data preprocessing, context classification using various machine learning models, and summarization using advanced NLP algorithms.
+                                </li>
+                                <li><b>Tech Stack:</b> Python, NLP, Machine Learning</li>
+                                <li><b>GitHub:</b><a href="https://github.com/VjKanna2/Text_Summarization" target="_blank"> Text Summarization</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="project3" data-aos="zoom-out-up">
+                    <p class="project3-title">Netflix Clone</p>
+                    <dl>
+                        <dt>Description:</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    Recreated Netflix's Homepage as the culminating project of Devtown's BootCamp.
+                                </li>
+                                <li>
+                                    Attained certifications for resulting in a 100% completion, and for enhancing community growth.
+                                </li>
+                                <li><b>Tech Stack:</b> HTML, CSS</li>
+                                <li><b>GitHub:</b><a href="https://github.com/VjKanna2/DevTown-Netflix-Clone" target="_blank"> Netflix Clone</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <!-- publications -->
+        <div class="publications col-12" id="publication">
+            <h3 class="publication-title" data-aos="fade-down"><i class="fas fa-newspaper"></i> Publication</h3>
+            <hr width="100">
+            <div class="paper1 col-12 col-md-11" data-aos="zoom-out-up">
+                <p class="paper-title ms-1">Enhancing Text Summarization: A User-Centric Approach for Accessibility and Seamless Experience</p>
+                <div class="des">
+                    <div class="ms-1">
+                        <p class="des-des">Description:</p>
+                        <ul class="paper-description">
+                            <li><b>ID:</b> IT21</li>
+                            <li><b>Conference:</b> ICICET'24</li>
+                            <li><b>Date:</b> May 10, 2024</li>
+                            <li><b>College:</b> Kings Engineering College</li>
+                        </ul>
+                    </div>
+                    <div class="img">
+                        <img src="Images/certificates/icicet.jpg" alt="ICICET Certificate"
+                            class="paper-certificate ms-1 ms-lg-0" id="icicet">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- skills -->
+        <div class="skills" id="skills">
+            <h2 class="skill-title" data-aos="fade-down"><i class="fas fa-user-cog"></i> Skills</h2>
+            <hr width="100">
+            <div class="logos col-12 col-lg-10 col-xl-8">
+                <div class="logo-item"  data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="sk-logo"/>
+                    <p class="skill-name">HTML</p>
+                </div>
+                <div class="logo-item" data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"  class="sk-logo"/>
+                    <p class="skill-name">CSS</p>
+                </div>
+                <div class="logo-item" data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"  class="sk-logo"/>
+                    <p class="skill-name">JavaScript</p>
+                </div>
+                <div class="logo-item" data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"  class="sk-logo"/>
+                    <p class="skill-name">React.Js</p>
+                </div>
+                <div class="logo-item" data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"  class="sk-logo"/>
+                    <p class="skill-name">Python</p>
+                </div>
+                <div class="logo-item" data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"  class="sk-logo"/>
+                    <p class="skill-name">Bootstrap</p>
+                </div>
+                <div class="logo-item"  data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"  class="sk-logo"/>
+                    <p class="skill-name">SASS</p>
+                </div>
+                <div class="logo-item"  data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"  class="sk-logo"/>
+                    <p class="skill-name">GitHub</p>
+                </div>
+                <div class="logo-item" data-aos="zoom-in">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"  class="sk-logo"/>
+                    <p class="skill-name">Git</p>
+                </div>            
+            </div>
+        </div>
+
+        <!-- certifications -->
+        <div class="certifications">
+            <h2 class="certfication-title" data-aos="fade-down">
+                <i class="far fa-file-alt"></i> Certifications
+            </h2>
+            <hr width="100">
+            <div class="gallery">
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="Images/certificates/html.png" alt="Certificate 1" class="certificate-thumbnail">
+                    <p class="certificate-name">HTML</p>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="Images/certificates/css.png" alt="Certificate 2" class="certificate-thumbnail">
+                    <p class="certificate-name">CSS</p>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="Images/certificates/Javascript.jpg" alt="Certificate 3" class="certificate-thumbnail">
+                    <p class="certificate-name">Javascript</p>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="Images/certificates/react.png" alt="Certificate 4" class="certificate-thumbnail">
+                    <p class="certificate-name">React Js</p>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="Images/certificates/python.png" alt="Certificate 5" class="certificate-thumbnail">
+                    <p class="certificate-name">Python</p>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="Images/certificates/bs.png" alt="Certificate 6" class="certificate-thumbnail">
+                    <p class="certificate-name">Bootstrap</p>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="Images/certificates/git.png" alt="Certificate 7" class="certificate-thumbnail">
+                    <p class="certificate-name">Git & GitHub</p>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="Images/certificates/devtown.png" alt="Certificate 8" class="certificate-thumbnail">
+                    <p class="certificate-name">Devtown Bootcamp</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="foot-logo" data-aos="zoom-in">
+            <button type="button" class="btn btn-dark btn-gh">
+                <i class="fab fa-github"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-in">
+                <i class="fab fa-linkedin-in"></i>
+            </button>
+        </div>
+        <div class="foot-link" data-aos="fade-up">
+            <p><a href="mailto:vjkanna24@gmail.com">vjkanna24@gmail.com</a></p>
+            <p><a href="#about">About</a></p>
+        </div>
+    </footer>
+    
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- animation js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>
